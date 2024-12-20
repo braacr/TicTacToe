@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>TicTacToe</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-    <div class="switch-container">
-        <label class="switch">
-            <input type="checkbox" id="toggleButton">
-            <span class="slider"></span>
-        </label>
-        <span>Version 2</span>
+    <div id="mode-selection" class="overlay">
+        <div class="mode-box">
+            <h2>Choose Your Mode</h2>
+            <button class="mode-button" onclick="selectMode('standard')">Standard Mode</button>
+            <button class="mode-button" onclick="selectMode('custom')">Custom Mode</button>
+        </div>
+    </div>
+    <div class="scoreboard">
+        <div class="score-card">
+            <h3>Player X</h3>
+            <span id="playerX-score">0</span>
+        </div>
+        <div class="score-card">
+            <h3>Player O</h3>
+            <span id="playerO-score">0</span>
+        </div>
     </div>
     <div class="turn-container">
-        <h3>Turn For</h3>
-        <div class="turn-box align">X</div>
+        <h3>Turn: </h3>
+        <div class="turn-box align active">X</div>
         <div class="turn-box align">O</div>
         <div class="bg"></div>
     </div>
-    <div class="main-grid">
-        <div class="box align">0</div>
-        <div class="box align">1</div>
-        <div class="box align">2</div>
-        <div class="box align">3</div>
-        <div class="box align">4</div>
-        <div class="box align">5</div>
-        <div class="box align">6</div>
-        <div class="box align">7</div>
-        <div class="box align">8</div>
-    </div>
+    <div class="main-grid"></div>
     <h2 id="results"></h2>
-    <button id="play-again">Play Again</button>
+    <button class="play-again">Play Again</button>
 
     <script src='index.js'></script>
 </body>
