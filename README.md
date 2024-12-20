@@ -4,12 +4,21 @@ A simple web-based TicTacToe game, created as a learning project. Includes an op
 
 ## Features
 - **Classic Mode**: Play the standard TicTacToe game with a friend.
-- **Strategic Mode**: An optional feature that removes the first move of each player starting from the third round, making the game longer and more tactical.
-- **Lightweight Codebase**: Built to focus on simplicity and learning.
+- **New Mode**: Adds a dynamic twist where each player can only keep three active moves on the board at a time. The oldest move is removed automatically after the third move.
 
-## To-Do
-- Add an AI opponent for single-player gameplay.
-- Implement a scoreboard to track wins and losses.
-- Implement Responsive Design for mobile browsers.
+- **Score Tracking**: Tracks the number of wins for both Player X and Player O.
+- **Stylish Design**: Responsive and modern user interface.
+- **Replay Option**: "Play Again" button for quick restarts.
 
-![image](https://github.com/braacr/TicTacToe/assets/68380465/b1fdabd5-f449-4091-a3eb-500ac48ae5a6)
+## Installation
+1. Clone this repository or download the files as a ZIP.
+2. Extract the contents to a directory.
+3. Open the `index.html` file in your web browser.
+
+## Files
+- **index.html**: The main HTML structure.
+- **styles.css**: The stylesheet for the TicTacToe's design.
+- **index.js**: The scripts for the TicTacToe's functionality.
+
+![{F6CBB18A-B03B-457E-A4BC-0C93614D6EDB}](https://github.com/user-attachments/assets/ca4b6505-375c-460c-aaf7-b21d4222b3ea)
+
